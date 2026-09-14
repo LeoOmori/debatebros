@@ -4,9 +4,7 @@ MVP em português para debates estruturados contra simulações educativas de pe
 
 ## Estado atual
 
-As Fases 1 a 5 estão implementadas: domínio, fluxo responsivo, persistência local validada, streaming com Gemini, julgamento estruturado, proteção básica contra abuso, métricas privadas e testes ponta a ponta. A chamada real ao provedor requer uma chave em `.env.local`.
-
-O plano completo está em [`docs/implementation-plan.md`](docs/implementation-plan.md).
+ A chamada real ao provedor requer uma chave em `.env.local`.
 
 ## Desenvolvimento
 
@@ -42,4 +40,4 @@ npm run verify
 - `docs/`: decisões e fases de implementação.
 
 Detalhes da integração: [`docs/ai-integration.md`](docs/ai-integration.md).
-Operação e lançamento: [`docs/operations.md`](docs/operations.md).
+
