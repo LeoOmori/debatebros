@@ -1,0 +1,203 @@
+{
+  "title": "Escolha o mundo visual de debatebros",
+  "question": "A rolagem escolheu Poesia Concreta. Mantenha essa direção, escolha uma alternativa ou peça uma nova rodada.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Poesia Concreta",
+      "kicker": "THE ROLL",
+      "lineage": "poesia concreta brasileira e cartazes modernistas modulares",
+      "thesis": "Cada argumento ocupa uma forma tipográfica que muda de posição quando a tese é contestada.",
+      "palette": ["#F4F5F0", "#111111", "#1746D1", "#F04E37", "#E8FF4A"],
+      "materials": ["tipografia modular", "blocos de cor chapada", "grade assimétrica"],
+      "viewport": "A tese domina a tela em dois blocos opostos, com o turno ativo recortado no centro e as seis etapas formando uma coluna lateral.",
+      "risk": "A composição perde clareza se a tipografia virar decoração em vez de organizar o argumento.",
+      "raised": [
+        {
+          "from": "Iridescência",
+          "raise": "Estados incertos recebem uma faixa cromática própria, sem fingir certeza durante carregamento ou erro."
+        },
+        {
+          "from": "Capa de cordões",
+          "raise": "Cada avanço de etapa transforma a mesma estrutura em vez de trocar páginas sem relação."
+        },
+        {
+          "from": "Fólio botânico",
+          "raise": "As etapas preservam escala e alinhamento para tornar a evolução do debate comparável."
+        }
+      ],
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "marca + tese", "x": 0, "y": 0, "w": 8, "h": 3, "accent": true},
+          {"label": "etapas", "x": 10, "y": 0, "w": 2, "h": 10},
+          {"label": "oponente", "x": 0, "y": 3, "w": 5, "h": 4},
+          {"label": "argumento ativo", "x": 4, "y": 4, "w": 6, "h": 4, "accent": true},
+          {"label": "ação", "x": 0, "y": 8, "w": 10, "h": 2}
+        ]
+      }
+    },
+    {
+      "id": "model-pick",
+      "label": "Mesa de Transmissão",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "estúdios de rádio, mesas de corte e grafismos de debate ao vivo",
+      "thesis": "O debate acontece como uma transmissão focada, com pauta, vez de fala e juiz na escuta.",
+      "palette": ["#101820", "#F6F7F2", "#FF4D2E", "#35D07F", "#6E7EFF"],
+      "materials": ["luzes tally", "régua de pauta", "legendas de transmissão"],
+      "viewport": "Oponente e participante dividem uma mesa horizontal; a fala ativa ocupa o centro e a pauta das etapas corre abaixo.",
+      "risk": "É a metáfora mais familiar e pode parecer um produto de podcast se a escrita não permanecer central.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "barra da transmissão", "x": 0, "y": 0, "w": 12, "h": 1},
+          {"label": "oponente", "x": 0, "y": 1, "w": 3, "h": 6},
+          {"label": "fala ativa", "x": 3, "y": 1, "w": 6, "h": 6, "accent": true},
+          {"label": "você + juiz", "x": 9, "y": 1, "w": 3, "h": 6},
+          {"label": "régua de etapas", "x": 0, "y": 7, "w": 12, "h": 1},
+          {"label": "entrada", "x": 2, "y": 8, "w": 8, "h": 2}
+        ]
+      }
+    },
+    {
+      "id": "challenger-split-flap",
+      "label": "Painel de Conexões",
+      "verdict": "competitive",
+      "lineage": "painéis split-flap de estações ferroviárias",
+      "thesis": "Cada rodada é uma partida anunciada; o painel deixa claro o que passou, o que está ativo e o que vem depois.",
+      "palette": ["#111311", "#F3F4EF", "#F0A51A", "#B9433D"],
+      "materials": ["aletas pretas", "células tipográficas", "metal escovado"],
+      "viewport": "Um grande painel lista tese, participantes e etapas; a linha ativa abre para revelar a fala e a entrada da pessoa.",
+      "case": "Supera a rolagem em clareza de progresso, mas identifica menos o universo de ideias e debate.",
+      "risk": "Pode reduzir argumentos longos a informação de embarque e transformar o painel em nostalgia.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/signals-instruments-split-flap-concourse.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "destino: tese", "x": 0, "y": 0, "w": 12, "h": 2, "accent": true},
+          {"label": "linhas de etapas", "x": 0, "y": 2, "w": 12, "h": 5},
+          {"label": "linha ativa expandida", "x": 2, "y": 4, "w": 8, "h": 3, "accent": true},
+          {"label": "controle", "x": 2, "y": 8, "w": 8, "h": 2}
+        ]
+      }
+    },
+    {
+      "id": "challenger-green-field",
+      "label": "Campo de Ideias",
+      "verdict": "competitive",
+      "lineage": "um campo verde saturado com cápsulas e placas gráficas flutuantes",
+      "thesis": "Participantes e argumentos são objetos claros movidos sobre um único campo compartilhado.",
+      "palette": ["#82CC5C", "#2F3130", "#FFFFFF", "#F2EFE3", "#F0574C"],
+      "materials": ["cápsulas brancas", "placas arredondadas", "discos de estado"],
+      "viewport": "A tese aparece enorme sobre o campo verde; uma cápsula conduz a escolha e a sala emerge como uma placa contínua.",
+      "case": "Aproxima-se do público casual, mas sua gramática de produto amigável explica menos a oposição intelectual.",
+      "risk": "Pode parecer uma plataforma educacional genérica se os argumentos não comandarem a composição.",
+      "hero": "https://impeccable.style/worlds/cards/sd-seedbed-lobes-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/sd-seedbed-lobes.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "nav cápsula", "x": 1, "y": 0, "w": 10, "h": 1},
+          {"label": "tese", "x": 0, "y": 2, "w": 8, "h": 4, "accent": true},
+          {"label": "participantes", "x": 8, "y": 2, "w": 4, "h": 4},
+          {"label": "placa do fluxo", "x": 0, "y": 7, "w": 12, "h": 3}
+        ]
+      }
+    },
+    {
+      "id": "challenger-cathode",
+      "label": "Cátodo em Vigília",
+      "verdict": "competitive",
+      "lineage": "numerais de cátodo sobre tela metálica de instrumentos noturnos",
+      "thesis": "Todas as etapas permanecem como fantasmas; apenas a fala permitida acende em laranja.",
+      "palette": ["#08131D", "#FF7A1A", "#E8E4D8", "#725437"],
+      "materials": ["tela de bronze", "afterglow", "numerais condensados"],
+      "viewport": "As seis etapas ocupam um plano contínuo, com a atual acesa e a fala surgindo sem caixas ou divisórias.",
+      "case": "Torna o estado ativo inequívoco, mas sua atmosfera técnica se conecta pouco aos aprendizes curiosos.",
+      "risk": "A luminosidade pode dominar a leitura e insinuar uma ferramenta técnica em vez de um debate humano.",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-struck-cathode-gauze-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/operate-b-struck-cathode-gauze.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "etapas fantasma", "x": 0, "y": 0, "w": 4, "h": 10},
+          {"label": "etapa acesa", "x": 2, "y": 2, "w": 4, "h": 5, "accent": true},
+          {"label": "fala", "x": 6, "y": 1, "w": 6, "h": 6},
+          {"label": "entrada", "x": 6, "y": 8, "w": 5, "h": 2}
+        ]
+      }
+    },
+    {
+      "id": "challenger-cloud",
+      "label": "Iridescência",
+      "verdict": "declined",
+      "lineage": "bordas iridescentes de nuvens em observação atmosférica",
+      "thesis": "A certeza aparece como uma faixa estreita que muda conforme novas evidências entram.",
+      "palette": ["#F7F8F7", "#59636C", "#88E1C2", "#D89BC3", "#7866CC"],
+      "materials": ["campo branco", "franjas espectrais", "marcas de incerteza"],
+      "viewport": "A tese repousa em um campo amplo enquanto uma borda cromática marca o estado da argumentação.",
+      "case": "A metáfora não identifica o ritual de debate e torna o avanço menos legível.",
+      "kept": "Estados de incerteza claros e seguros.",
+      "risk": "Sutileza demais para uma tarefa baseada em oposição e turnos.",
+      "hero": "https://impeccable.style/worlds/cards/clouds-storms-auroras-iridescent-cloud-edge-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/clouds-storms-auroras-iridescent-cloud-edge.webp"
+    },
+    {
+      "id": "challenger-cape",
+      "label": "Argumento em Tensão",
+      "verdict": "declined",
+      "lineage": "capa de seda transformada por canais e cordões",
+      "thesis": "Cada resposta puxa um ponto e muda a forma global do argumento.",
+      "palette": ["#101010", "#D6A63A", "#3F444B", "#EAE7DE"],
+      "materials": ["seda preta", "costura grafite", "cordão dourado"],
+      "viewport": "Uma linha dourada conecta tese, objeção e resposta sobre um plano escuro em transformação.",
+      "case": "A transformação é expressiva, mas não oferece uma convenção clara de leitura ou navegação.",
+      "kept": "Transições devem mostrar causa e efeito.",
+      "risk": "A metáfora têxtil exigiria explicação antes de ajudar a tarefa.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-drawcord-transforming-cape-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-drawcord-transforming-cape.webp"
+    },
+    {
+      "id": "challenger-botanical",
+      "label": "Fólio do Argumento",
+      "verdict": "declined",
+      "lineage": "fólio botânico que acompanha uma planta por cinco estágios",
+      "thesis": "O mesmo argumento é observado em escala fixa enquanto amadurece pelas etapas.",
+      "palette": ["#F2E7D0", "#6A4A32", "#456B3D", "#B93238"],
+      "materials": ["placas registradas", "gravura", "legendas de estágio"],
+      "viewport": "Seis placas alinham a evolução da tese, com a etapa ativa ampliada abaixo.",
+      "case": "A comparação é útil, mas o mundo editorial clássico cai no padrão esperado para produtos de filosofia.",
+      "kept": "Comparação em escala e alinhamento constantes.",
+      "risk": "Parece arquivo histórico, não uma conversa viva.",
+      "hero": "https://impeccable.style/worlds/cards/editorial-sequence-montage-botanical-folio-season-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/editorial-sequence-montage-botanical-folio-season.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "O padrão da categoria",
+    "thesis": "Landing page clara, seletores em cartões e debate em uma interface convencional de chat.",
+    "palette": ["#FFFFFF", "#111827", "#2563EB"],
+    "materials": ["grade limpa", "cartões", "balões de mensagem"],
+    "viewport": "Uma apresentação central leva a uma grade de personagens e a uma sala de chat conhecida.",
+    "risk": "Fácil de usar, mas indistinguível de dezenas de produtos de personagens com IA.",
+    "wireframe": {
+      "cols": 12,
+      "rows": 10,
+      "regions": [
+        {"label": "nav", "x": 1, "y": 0, "w": 10, "h": 1},
+        {"label": "hero", "x": 2, "y": 2, "w": 8, "h": 3, "accent": true},
+        {"label": "cards", "x": 1, "y": 6, "w": 10, "h": 4}
+      ]
+    }
+  },
+  "steer": true
+}

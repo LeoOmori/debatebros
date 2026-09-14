@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-13T05:00:00.000Z",
+  "title": "Design System: debatebros",
+  "extensions": {
+    "colorMeta": {
+      "studio-ink": { "role": "neutral", "displayName": "Studio Ink", "tonalRamp": ["#071016", "#101820", "#1a2731", "#34434d", "#59666e", "#829096", "#b8c0c2", "#f0f2ee"] },
+      "tally-vermilion": { "role": "primary", "displayName": "Tally Vermilion", "tonalRamp": ["#35100a", "#6d1d11", "#a92e1b", "#d94027", "#ff4d2e", "#ff806b", "#ffb5a8", "#ffe8e3"] },
+      "ready-green": { "role": "secondary", "displayName": "Ready Green", "tonalRamp": ["#062b18", "#0c5330", "#148047", "#21ab60", "#35d07f", "#6de0a2", "#a5edc5", "#e6faef"] },
+      "judge-periwinkle": { "role": "tertiary", "displayName": "Judge Periwinkle", "tonalRamp": ["#171b4c", "#2a3074", "#444ca3", "#646ed1", "#8c96ff", "#afb5ff", "#d1d5ff", "#f0f1ff"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Broadcast Display", "purpose": "Short participant names, decisive headings and stage identity." },
+      "body": { "displayName": "Argument Body", "purpose": "Arguments, instructions and evidence-based feedback." },
+      "label": { "displayName": "Channel Label", "purpose": "Uppercase operational labels and compact stage metadata." }
+    },
+    "shadows": [
+      { "name": "studio-lift", "value": "0 28px 80px rgba(0,0,0,0.34)", "purpose": "Only for the assembled studio preview and sticky production summary." }
+    ],
+    "motion": [
+      { "name": "signal-change", "value": "180ms ease-out", "purpose": "Button and selection state changes." },
+      { "name": "transmission-bars", "value": "900ms ease-in-out infinite alternate", "purpose": "The single loading signal while a simulated participant is composing." }
+    ],
+    "breakpoints": [
+      { "name": "stack-channels", "value": "900px" },
+      { "name": "phone-rundown", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Starts or advances a decisive step.",
+      "html": "<button class=\"ds-primary\">ENTRAR NO AR</button>",
+      "css": ".ds-primary{min-height:50px;border:0;border-radius:0;background:#ff4d2e;color:#f6f7f2;padding:.8rem 1.25rem;font:700 1rem/1 sans-serif;letter-spacing:.04em;text-transform:uppercase;transition:background 180ms ease-out,box-shadow 180ms ease-out}.ds-primary:hover{background:#ff6b50;box-shadow:0 10px 28px rgba(0,0,0,.24)}.ds-primary:focus-visible{outline:3px solid #8c96ff;outline-offset:4px}"
+    },
+    {
+      "name": "Debate Field",
+      "kind": "input",
+      "refersTo": "input-debate",
+      "description": "A square, high-contrast writing surface inside the active channel.",
+      "html": "<textarea class=\"ds-field\" placeholder=\"Responda ao ponto central.\"></textarea>",
+      "css": ".ds-field{width:100%;min-height:150px;resize:vertical;border:1px solid #60717b;border-radius:0;background:#1a2731;color:#f6f7f2;padding:1rem;font:400 1rem/1.5 sans-serif;caret-color:#ff4d2e}.ds-field::placeholder{color:#9ba8ae}.ds-field:focus-visible{outline:3px solid #8c96ff;outline-offset:4px}"
+    },
+    {
+      "name": "Stage Rundown",
+      "kind": "custom",
+      "description": "Finite progress shown as connected broadcast cells.",
+      "html": "<ol class=\"ds-rundown\"><li class=\"ds-done\">01 ABERTURA</li><li class=\"ds-active\">02 SEU ARGUMENTO</li><li>03 RÉPLICA</li></ol>",
+      "css": ".ds-rundown{display:grid;grid-template-columns:repeat(3,1fr);margin:0;padding:0;list-style:none;border:1px solid #52616a;background:#101820;color:#9ba8ae}.ds-rundown li{padding:1rem;border-right:1px solid #52616a;font:600 .75rem/1.2 sans-serif}.ds-rundown li:last-child{border:0}.ds-rundown .ds-done{color:#35d07f}.ds-rundown .ds-active{background:#ff4d2e;color:#fff}"
+    },
+    {
+      "name": "Selection Row",
+      "kind": "custom",
+      "description": "A ruled full-target radio option with tally selection.",
+      "html": "<label class=\"ds-option\"><input type=\"radio\" checked><span>IMMANUEL KANT</span><i></i></label>",
+      "css": ".ds-option{position:relative;display:block;min-height:110px;padding:1rem;border-bottom:1px solid #52616a;background:#f6f7f2;color:#101820;font:800 1.5rem/.95 sans-serif}.ds-option input{position:absolute;opacity:0}.ds-option i{position:absolute;right:1rem;top:1rem;width:.7rem;height:.7rem;border-radius:50%;background:#ff4d2e}.ds-option:focus-within{outline:3px solid #8c96ff;outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Mesa de Transmissão",
+    "overview": "A focused live broadcast where argument text is the primary material and operational signals make the finite debate structure visible.",
+    "keyCharacteristics": ["One active signal at a time", "Connected broadcast rails", "Condensed identity with hyperlegible arguments", "Deliberate mobile channel stacking"],
+    "rules": [
+      { "name": "Signal Ownership", "body": "Vermilion means live, green means complete and periwinkle means judgment.", "section": "colors" },
+      { "name": "Two Voice", "body": "Condensed type identifies the broadcast; hyperlegible type carries thought.", "section": "typography" },
+      { "name": "Desk Plane", "body": "Related content shares one continuous plane rather than detached cards.", "section": "elevation" }
+    ],
+    "dos": ["Make the active speaker, current stage and next action immediately identifiable.", "Let argument copy own the largest readable region.", "Stack channels deliberately on mobile."],
+    "donts": ["Do not use chat bubbles.", "Do not use rounded AI-product decoration.", "Do not set long arguments in display type."]
+  }
+}
